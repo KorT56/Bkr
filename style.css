@@ -234,7 +234,7 @@ text-transform: uppercase;
 	color: #fff;
 	text-transform: uppercase;
 	font-size: 1.25em;
-	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 	backface-visibility: hidden;
 }
 
@@ -258,7 +258,7 @@ figure.effect-text-three {
 }
 figure.effect-text-three:hover img {
 	opacity: 0.4;
-	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0); ?
 }
 
@@ -275,26 +275,26 @@ figure.effect-text-three h3::after {
 	height: 3px;
 	background: #fff;
 	content: '';
-	-webkit-transition: -webkit-transform 0.35s;
+	transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
-	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
 	transform: translate3d(-100%,0,0);  /*линия*/
 }
 figure.effect-text-three:hover h3::after {
-	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
 figure.effect-text-three p {
 	padding: 1em 0;
 	opacity: 0;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(100%,0,0);
+	transition: opacity 0.35s, transform 0.35s;
+	transform: translate3d(100%,0,0);
 	transform: translate3d(100%,0,0);
 }
 figure.effect-text-three:hover p {
 	opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
     
